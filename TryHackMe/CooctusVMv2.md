@@ -106,8 +106,7 @@ paradox:x:1003:1003::/home/paradox:/bin/bash
 
 ## Crontab
 
-![[Pasted image 20210416055855.png]]
-
+![Pasted image 20210416055855](https://user-images.githubusercontent.com/68326057/115085463-357fac80-9f28-11eb-8a15-a6ea7b398648.png)
 
 # szymex
 ## SniffingCat.py
@@ -261,7 +260,6 @@ t********y -->password
 
 ![Pasted image 20210416082125](https://user-images.githubusercontent.com/68326057/115082782-1252fe00-9f24-11eb-919c-aa84f0a2fae6.png)
 
-![Pasted image 20210416080927](https://user-images.githubusercontent.com/68326057/115082789-141cc180-9f24-11eb-8fac-5d9589079aa1.png)
 
 ## Git Log
 
