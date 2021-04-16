@@ -61,13 +61,13 @@ cd /tmp/nfs && ls -la
 ## Found Credential.bak in it
 
 ```bash
-paradoxial.test
-ShibaPretzel79
+p*************t
+S************9
 ```
 
 # Logged on /login
 
-![Pasted image 20210416073432](https://user-images.githubusercontent.com/68326057/115083002-652cb580-9f24-11eb-9e05-ec6b436ada08.png)
+![Pasted image 20210416055105](https://user-images.githubusercontent.com/68326057/115082998-652cb580-9f24-11eb-8a85-57e7a43a4c33.png)
 
 
 ## Test-1
@@ -177,11 +177,6 @@ for char in enc_pass:
 	count=0
 ```
 
-![Pasted image 20210416082432](https://user-images.githubusercontent.com/68326057/115082994-6362f200-9f24-11eb-8a6a-f79527168adc.png)
-
-![Pasted image 20210416055105](https://user-images.githubusercontent.com/68326057/115082998-652cb580-9f24-11eb-8a85-57e7a43a4c33.png)
-
-
 ![Pasted image 20210417070838](https://user-images.githubusercontent.com/68326057/115083045-7249a480-9f24-11eb-9c45-bc15b2addcc8.png)
 
 1. We can see few char are repeating in it .
@@ -257,8 +252,7 @@ Combine them all and visit the station.
 1. Now I have to combine them.
 2. f96050**********7b56db1552
 3. This looks like a hash
-
-![[Pasted image 20210416081845.png]]
+4. Decode it in CrackStation
 
 # Tux
 ```bash
@@ -268,6 +262,10 @@ t********y -->password
 ![Pasted image 20210416082125](https://user-images.githubusercontent.com/68326057/115082782-1252fe00-9f24-11eb-919c-aa84f0a2fae6.png)
 
 ![Pasted image 20210416080927](https://user-images.githubusercontent.com/68326057/115082789-141cc180-9f24-11eb-8fac-5d9589079aa1.png)
+
+## Git Log
+
+![Pasted image 20210416082432](https://user-images.githubusercontent.com/68326057/115082994-6362f200-9f24-11eb-8a6a-f79527168adc.png)
 
 
 
@@ -321,7 +319,7 @@ uname = input("\ncookie login: ")
 pw = input("Password: ")
 
 for i in range(0,2):
-    if pw != "slowroastpork":
+    if pw != "s************k":
         pw = input("Password: ")
     else:
         if uname == "varg":
@@ -353,7 +351,7 @@ for i in range(0,2):
 type : sudo umount -f /opt/CooctFS
 ```
 
-1. There will we /root dir in /opt/CooctFS
+1. There will we /root dir in /opt/CooctFS (Note:- The Root Dir was already present in it.)
 2. grab the id_rsa in .ssh folder
 3. become root grab the flag and paste it on THM
 
