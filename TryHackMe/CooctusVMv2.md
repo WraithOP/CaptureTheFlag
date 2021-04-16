@@ -67,7 +67,7 @@ ShibaPretzel79
 
 # Logged on /login
 
-![[Pasted image 20210416055105.png]]
+![Pasted image 20210416073432](https://user-images.githubusercontent.com/68326057/115083002-652cb580-9f24-11eb-9e05-ec6b436ada08.png)
 
 
 ## Test-1
@@ -177,7 +177,12 @@ for char in enc_pass:
 	count=0
 ```
 
-![[Pasted image 20210417070838.png]]
+![Pasted image 20210416082432](https://user-images.githubusercontent.com/68326057/115082994-6362f200-9f24-11eb-8a6a-f79527168adc.png)
+
+![Pasted image 20210416055105](https://user-images.githubusercontent.com/68326057/115082998-652cb580-9f24-11eb-8a85-57e7a43a4c33.png)
+
+
+![Pasted image 20210417070838](https://user-images.githubusercontent.com/68326057/115083045-7249a480-9f24-11eb-9c45-bc15b2addcc8.png)
 
 1. We can see few char are repeating in it .
 2. So we have to take cases[8], make all possible password.
@@ -187,23 +192,20 @@ for char in enc_pass:
 case=["cherrycoke","cherrycUke","cherXycoke","cherXycUke","cheXrycoke","cheXrycUke","cheXXycoke","cheXXycUke"]
 ```
 
-*Got Lucky in First one*
 
 # szymex
 
-```bash
-cherrycoke
-```
 
-
-![[Pasted image 20210416065942.png]]
+![Pasted image 20210416065942](https://user-images.githubusercontent.com/68326057/115082997-64941f00-9f24-11eb-87d4-51e30b9d762a.png)
 
 we are in testers group
 
-![[Pasted image 20210416070007.png]]
+![Pasted image 20210416070007](https://user-images.githubusercontent.com/68326057/115082906-43cbc980-9f24-11eb-905f-9ca550c24c7e.png)
 
 ## Tuxling_1
+
 ## modified nootcode.c
+
 ```c
 
 #include <stdio.h>
@@ -229,14 +231,14 @@ void nuut (){
 
 ## Tuxling_2
 
-![[Pasted image 20210416073101.png]]
+![Pasted image 20210416073101](https://user-images.githubusercontent.com/68326057/115082909-44646000-9f24-11eb-81c6-e5f729c98b34.png)
 
-![[Pasted image 20210416073432.png]]
 
-![[Pasted image 20210416080927.png]]
+
+![Pasted image 20210416080927](https://user-images.githubusercontent.com/68326057/115082789-141cc180-9f24-11eb-8fac-5d9589079aa1.png)
 
 ```bash
-6eaf62818d
+6********d
 ```
 
 ## Tuxling_3
@@ -253,19 +255,20 @@ Combine them all and visit the station.
 
 ##
 1. Now I have to combine them.
-2. f96050ad616eaf62818d637b56db1552
+2. f96050**********7b56db1552
 3. This looks like a hash
 
 ![[Pasted image 20210416081845.png]]
 
 # Tux
 ```bash
-tuxykitty -->password
+t********y -->password
 ```
 
-![[Pasted image 20210416082125.png]]
+![Pasted image 20210416082125](https://user-images.githubusercontent.com/68326057/115082782-1252fe00-9f24-11eb-919c-aa84f0a2fae6.png)
 
-![[Pasted image 20210416082432.png]]
+![Pasted image 20210416080927](https://user-images.githubusercontent.com/68326057/115082789-141cc180-9f24-11eb-8fac-5d9589079aa1.png)
+
 
 
 ```bash
@@ -337,12 +340,13 @@ for i in range(0,2):
 3. on second terminal login again as tux
 4. then type :- /home/varg/cooctOS_src/bin/bash -p
 
-![[Pasted image 20210416091706.png]]
+![Pasted image 20210416091706](https://user-images.githubusercontent.com/68326057/115082913-45958d00-9f24-11eb-815d-4f6a35381dd1.png)
+
 
 # OR
 --> use The above pass to directly become varg
 
-![[Pasted image 20210416092448.png]]
+![Pasted image 20210416092448](https://user-images.githubusercontent.com/68326057/115082779-1121d100-9f24-11eb-891a-d3475ad5a5c6.png)
 
 # root
 ```bash
@@ -353,4 +357,4 @@ type : sudo umount -f /opt/CooctFS
 2. grab the id_rsa in .ssh folder
 3. become root grab the flag and paste it on THM
 
-![[Pasted image 20210416104512.png]]
+![Pasted image 20210416104512](https://user-images.githubusercontent.com/68326057/115082776-0ff0a400-9f24-11eb-8173-e22faf7e196b.png)
