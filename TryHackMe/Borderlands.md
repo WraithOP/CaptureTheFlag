@@ -1,6 +1,6 @@
 ![image](https://user-images.githubusercontent.com/68326057/125136283-258ef780-e128-11eb-85c6-2ae8fb7cc691.png)
 
-Borderlands -WriteUP OSCP Style
+Borderlands - TRYHACKME Writeup OSCP Style
 
 ![image](https://user-images.githubusercontent.com/68326057/125136331-41929900-e128-11eb-9ae3-04bb445b0407.png)
 
