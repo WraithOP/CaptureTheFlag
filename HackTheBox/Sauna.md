@@ -45,7 +45,7 @@ Host script results:
 
 # SMB
 
-``bash
+```bash
 $ crackmapexec smb 10.10.10.175
 SMB         10.10.10.175    445    SAUNA            [*] Windows 10.0 Build 17763 x64 (name:SAUNA) (domain:EGOTISTICAL-BANK.LOCAL) (signing:True) (SMBv1:False)
 ```
